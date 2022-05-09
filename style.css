@@ -214,6 +214,6 @@ footer div {
     margin-bottom: 5rem;
   }
   .copyright {
-    margin: auto;
+    argin-left: 30px;
   }
 }
