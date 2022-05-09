@@ -79,6 +79,7 @@ p {
 .heading-enormous {
   font-size: 5rem;
   margin: 2rem;
+  line-height: 5rem;
 }
 .heading-enormous:last-child {
   margin-bottom: 15rem;
@@ -205,5 +206,11 @@ footer div {
   #about,
   #contact {
     margin: 0 1rem;
+  }
+  .intro {
+    margin: 5rem auto 0 auto;
+  }
+  .heading-enormous:last-child {
+    margin-bottom: 5rem;
   }
 }
