@@ -213,4 +213,7 @@ footer div {
   .heading-enormous:last-child {
     margin-bottom: 5rem;
   }
+  .copyright {
+    margin: auto;
+  }
 }
