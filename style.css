@@ -67,6 +67,7 @@ a {
   text-decoration: none;
   color: var(--contrast-color);
 }
+.footer-list li:hover,
 .nav-item:hover,
 .link-hover:hover {
   text-decoration: underline solid 4px;
