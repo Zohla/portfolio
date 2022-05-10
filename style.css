@@ -11,6 +11,7 @@
   --p-large-mobile: 1.25rem;
   --p-normal-desktop: 1.25rem;
   --p-small-desktop: 1rem;
+  --transition: all 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 * {
@@ -46,6 +47,9 @@ h3 {
 }
 h4 {
   font-size: 1.5rem;
+}
+h5 {
+  font-size: 1rem;
 }
 #nav {
   max-width: 1500px;
@@ -114,7 +118,7 @@ p {
   max-width: 1700px;
   margin: auto;
 }
-.project-card {
+.project-card a {
   display: flex;
   flex-direction: column;
   border: 2px solid var(--medium-color);
@@ -126,9 +130,13 @@ p {
   max-width: 500px;
   border-radius: 5px;
 }
-.project-card:hover {
+.project-card a:hover {
   border-color: var(--contrast-color);
+  transform: translateY(-10px);
+  transition: var(--transition);
+  box-shadow: 0 5px 14px rgba(100, 255, 218, 0.24);
 }
+
 .proj-title {
   color: var(--light-color);
   align-self: center;
@@ -147,6 +155,18 @@ p {
   margin-right: 1rem;
   font-size: 1rem;
   font-family: var(--font2);
+}
+
+.tool-container:last-child {
+  border: 2px solid var(--light-color);
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.tool-container:last-child h4 {
+  text-align: center;
+}
+.other-tech {
+  display: flex;
 }
 .other-tools {
   color: var(--light-color);
@@ -178,6 +198,10 @@ p {
 #contact {
   margin-bottom: 5rem;
 }
+/* #contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+} */
 footer {
   margin-top: 2rem;
 }
